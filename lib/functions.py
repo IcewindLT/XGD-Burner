@@ -7,18 +7,19 @@ import os, sys
 def burn(DTYPE):
     if DTYPE == "xgd3":
         print("Burning INAME as DTYPE with layerbreak 2133520")
-        os.system("growisofs -use-the-force-luke=notray -use-the-force-luke=break:2133520 -speed=SPEED -Z DVD=INAME")
+        os.system("growisofs -use-the-force-luke=dao -use-the-force-luke=break:2133520 -speed=2 -Z DVD=INAME")
         print("Done! You can now remove the disc..")
     elif DTYPE == "xgd2":
         print("Burning INAME as DTYPE with layerbreak 1913760")
-        os.system("growisofs -use-the-force-luke=notray -use-the-force-luke=dao -use-the-force-luke=break:1913760 -dvd-compat -speed=SPEED -Z DVD=INAME")
+        os.system("growisofs -use-the-force-luke=dao -use-the-force-luke=dao -use-the-force-luke=break:1913760 -dvd-compat -speed=2 -Z DVD=INAME")
         print("Done! You can now remove the disc..")
     elif DTYPE == "xgd3trunc":
         print("Burning INAME as DTYPE with layerbreak 2086912")
-        os.system("growisofs -use-the-force-luke=dao -use-the-force-luke=break:2086912 -dvd-compat -speed=SPEED -Z DVD=INAME")
+        os.system("growisofs -use-the-force-luke=dao -use-the-force-luke=break:2086912 -dvd-compat -speed=2 -Z DVD=INAME")
         print("Done! You can now remove the disc..")
     else:
         print("Something went wrong... Closing")
+        sys.exit()
     return
 
 def depcheck():
