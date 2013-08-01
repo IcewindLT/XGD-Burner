@@ -1,4 +1,7 @@
-#!/usr/bin/python
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+encoding = 'utf-8'
+
 import os, sys, functions, wx
 
 print("XGD-Burner 0.1 beta")
