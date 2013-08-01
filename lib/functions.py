@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 encoding = 'utf-8'
 
-import os
+import os, sys
 
 def burn(DTYPE):
     if DTYPE == xgd3:
@@ -31,9 +31,9 @@ def testarg(DTYPE):
     return
 
 def depcheck():
-    if ( not os.path.isfile('/usr/bin/growisofs')):
+    if ( os.path.isfile('/usr/bin/growisofs')) == False:
         print("You need to have growisofs installed on your system to run this program..")
-        exit
+        sys.exit()
     elif ( os.path.isfile('/usr/bin/growisofs')):
         print("growisofs found... Starting XGDBurner..")
     return

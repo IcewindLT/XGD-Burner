@@ -3,10 +3,10 @@
 encoding = 'utf-8'
 
 import os, sys
-from lib import functions
+import lib.functions as functions
 
 #check for dependencies
-functions.depcheck
+functions.depcheck()
 
 #start GUI
-os.system("python lib/main")
+os.system("python lib/main.py")
