@@ -4,7 +4,7 @@ encoding = 'utf-8'
 
 import os, sys
 
-def burn(DTYPE):
+def burn():
     if DTYPE == "xgd3":
         print("Burning INAME as DTYPE with layerbreak 2133520")
         os.system("growisofs -use-the-force-luke=dao -use-the-force-luke=break:2133520 -speed=2 -Z DVD=INAME")

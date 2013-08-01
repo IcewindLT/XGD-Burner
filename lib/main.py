@@ -43,3 +43,5 @@ print("Choose your DVD burner. You will need to put /dev/ in front of the drive 
 os.system("echo dmesg | egrep -i --color 'cdrom|dvd|cd/rw|writer'")
 DVD = raw_input()
 
+print("Everything looks good. Starting burn process...")
+functions.burn()
